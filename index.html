@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>Глейси</title>
   </head>
   <body>
   	<header class="page-header">
@@ -14,7 +14,7 @@
   				<li>
   					<a href="#">Каталог</a>
 	  				<ul class="sub-menu catalog">
-			  			<li><b><a href="#">Новинки</a></b></li>
+			  			<li><a href="#">Новинки</a></li>
 			  			<li><a href="catalog.html">Сливочное</a></li>
 			  			<li><a href="#">Щербеты</a></li>
 			  			<li><a href="#">Фруктовый лёд</a></li>
@@ -28,34 +28,37 @@
   					<a href="#">О&nbsp;Компании</a>
   				</li>
   			</ul>
-  			<ul class="user-menu">
-  				<li>
-  					<a href="#">Поиск</a>
-  						<p>
-  							<input type="text" name="search" placeholder="Что ищем?">
-  						</p>
-  				</li>
-  				<li>
-  					<a href="#">Вход</a>
-	  				<form method="post">
-	  						<p>
-			  					<input type="email" name="login" placeholder="Электронная почта" required>
-			  				</p>
-			  				<p>
-			  					<input type="password" name="password" placeholder="Пароль" required>
-			  				</p>
-			  				<a href="#">Забыли пароль?</a>
-			  				<a href="#">Новая регистрация</a>
-			  				<button type="submit" class="authorize-button">Войти</button>
-			  		</form>
-  				</li>
-  				<li>
-  					<a href="#">Корзина</a>
-  				</li>
-  			</ul>	
   		</nav>
-  		<span>С&nbsp;10&nbsp;до&nbsp;20, ежедневно</span>
-  		<a href="tel:+78124502525">8&nbsp;812 450-25-25</a>
+  		<section class="user-menu">
+  			<h2 class="visually-hidden">Навигация пользователя</h2> <!-- Не забыть скрыть -->
+  			<article class="search">
+  				<h3 class="visually-hidden">Поиск</h3> <!-- Без заголовков валидатор ругается -->
+  				<a href="#">Поиск</a>
+  				<label for="search">Поиск</label>
+  				<input type="text" name="search" id="search" placeholder="Что ищем?">
+  			</article>
+  			<article class="authorize">
+  				<h3 class="visually-hidden">Авторизация на сайте</h3> <!-- Без заголовков валидатор ругается -->
+  				<a href="#">Вход</a>
+	  			<form method="post">
+	  				<label for="login">Электронная почта</label>
+	  				<input type="email" name="login" id="login" placeholder="Электронная почта" required>
+	  				<label for="password">Пароль</label>
+			  		<input type="password" name="password" id="password" placeholder="Пароль" required>
+			  		<a href="#">Забыли пароль?</a>
+			  		<a href="#">Новая регистрация</a>
+			  		<button type="submit" class="authorize-button">Войти</button>
+			  	</form>
+  			</article>
+  			<article class="basket">
+  				<h3 class="visually-hidden">Корзина</h3> <!-- Без заголовков валидатор ругается -->
+  				<a href="#">Корзина</a>
+  			</article>
+  		</section>	
+  		<div class="header-contacts">
+		  	<span>С&nbsp;10&nbsp;до&nbsp;20, ежедневно</span>
+		  	<span><a href="tel:+78124502525">8&nbsp;812 450-25-25</a></span>
+		</div>
   	</header>
   	<main class="page-content">
   		<h1 class="visually-hidden">Магазин &laquo;Gllacy&raquo;</h1> <!-- Не забыть скрыть -->
@@ -82,32 +85,31 @@
   				</li>
   			</ul>
   		</div>
-  		<div class="catalog-items">
-	  		<ul class="catalog-list popular">
-	  			<li>
-		  			<p>Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой</p>
-	                <a href="#"><img src="img/product-1.jpg" width="265" height="270" alt="Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой"></a>
-	                <p class="price">310 ₽<span>/кг</span></p>
-	             </li>
-	             <li>
-		  			<p>Сливочно-кофейное с&nbsp;кусочками шоколада</p>
-	                <a href="#"><img src="img/product-2.jpg" width="265" height="270" alt="Сливочно-кофейное с&nbsp;кусочками шоколада"></a>
-	               	<p class="price">380 ₽<span>/кг</span></p>
-	             </li>
-	             <li>
-		  			<p>Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада</p>
+  		<section class="catalog-list">
+  			<h2 class="visually-hidden">Популярные товары</h2> <!-- Не забыть скрыть -->
+	  		<article class="catalog-item popular">
+		  		<h3>Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой</h3>
+	            <a href="#"><img src="img/product-1.jpg" width="265" height="270" alt="Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой"></a>
+	            <p class="price">310 ₽<span>/кг</span></p>
+	        </article>
+	        <article class="catalog-item popular">
+		  		<h3>Сливочно-кофейное с&nbsp;кусочками шоколада</h3>
+	            <a href="#"><img src="img/product-2.jpg" width="265" height="270" alt="Сливочно-кофейное с&nbsp;кусочками шоколада"></a>
+	            <p class="price">380 ₽<span>/кг</span></p>
+	        </article>
+	        <article class="catalog-item popular">
+		  			<h3>Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада</h3>
 	                <a href="#"><img src="img/product-3.jpg" width="265" height="270" alt="Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада"></a>
 	            	<p class="price">335 ₽<span>/кг</span></p>
-	             </li>
-	              <li>
-		  			<p>Сливочное крем-брюле с&nbsp;карамельной подливкой</p>
-	                <a href="#"><img src="img/product-4.jpg" width="265" height="270" alt="Сливочное крем-брюле с&nbsp;карамельной подливкой"></a>
-	                <p class="price">415 ₽<span>/кг</span></p>
-	             </li>
-	        </ul>
-	    </div>
+	        </article>
+	        <article class="catalog-item popular">
+		  		<h3>Сливочное крем-брюле с&nbsp;карамельной подливкой</h3>
+	            <a href="#"><img src="img/product-4.jpg" width="265" height="270" alt="Сливочное крем-брюле с&nbsp;карамельной подливкой"></a>
+	            <p class="price">415 ₽<span>/кг</span></p>
+	        </article>
+	    </section>
   		<div class="about">
-  			<p><b>Магазин Глейси&nbsp;&mdash; это онлайн и&nbsp;офлайн магазин по&nbsp;продаже мороженого собственного производства на&nbsp;развес</b></p>
+  			<p>Магазин Глейси&nbsp;&mdash; это онлайн и&nbsp;офлайн магазин по&nbsp;продаже мороженого собственного производства на&nbsp;развес</p>
 		  		<ul class="about-items">
 		  			<li>Все наше мороженое изготавливается на&nbsp;собственном производстве, с&nbsp;использованием современного оборудования и&nbsp;проверенных временем технологий.</li>
 		  			<li>Для приготовления мороженого используются настоящие сливки и&nbsp;молоко высочайшего качества. Все дополнительные ингредиенты и&nbsp;добавки произведены из&nbsp;натурального, экологически чистого сырья.</li>
@@ -121,33 +123,32 @@
 		</article>
 		<section class="subscribe">
 			<h2 class="visually-hidden">Подпишитесь на нашу рассылку</h2> <!-- Не забыть скрыть -->
-		  	<p>Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)</p>
-		  	<p>
-		  		<input type="email" name="login" placeholder="Электронная почта">
-		  	</p>
-		  	<button type="submit" class="send-button">Отправить</button>
+		  	<h3>Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)</h3>
+		  	<form method="post">
+		  		<label for="subscribers-email">Электронная почта</label>
+		  		<input type="email" name="subscribers-email" id="subscribers-email" placeholder="Электронная почта">
+		  		<button type="submit" class="send-button">Отправить</button>
+		  	</form>
 		</section>
-		<section class="adress-map">
+		<div class="adress-map">
 			<h2 class="visually-hidden">Контакты:</h2> <!-- Не забыть скрыть -->
-		  	<figure>#Тут должна быть карта#</figure>
-		  		<div class="contacts">
-		  			<p>Адрес главного офиса и&nbsp;офлайн магазина:</p>
-		  			<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-		  			<p>Для заказов по&nbsp;телефону:</p>
-		  			<a href="tel:+78124502525">8&nbsp;812 450-25-25</a>
-		  			<p>(с&nbsp;10&nbsp;до&nbsp;20&nbsp;ежедневно)</p>
-		  			<a href="#" class="button">Форма обратной связи</a>
-		  		</div>
-		</section>
+		  	<!-- Здесь будет карта -->
+		  	<div class="contacts">
+		  		<p>Адрес главного офиса и&nbsp;офлайн магазина:</p>
+		  		<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+		  		<p>Для заказов по&nbsp;телефону:</p>
+		  		<a href="tel:+78124502525">8&nbsp;812 450-25-25</a>
+		  		<p>(с&nbsp;10&nbsp;до&nbsp;20&nbsp;ежедневно)</p>
+		  		<a href="#" class="button">Форма обратной связи</a>
+		  	</div>
+		</div>
 	</main>
   	<footer>
   		<div class="footer-social">
-	  		<ul class="footer-social-icons">
-	  			<li><a href="#">Twitter</a></li>
-	  			<li><a href="#">Instagram</a></li>
-	  			<li><a href="#">Facebook</a></li>
-	  			<li><a href="#">Vk</a></li>
-	  		</ul>
+	  		<a href="#">Twitter</a>
+	  		<a href="#">Instagram</a>
+	  		<a href="#">Facebook</a>
+	  		<a href="#">Vk</a>
 	  	</div>
   		<ul class="footer-navigation">
   			<li><a href="#">Для поставщиков</a></li>
@@ -165,16 +166,14 @@
   	<div class="modal modal-feedback">
   		<h3>Мы&nbsp;обязательно вам ответим!</h3>
   		<form method="post">
-  			<p>
-  				<input type="text" name="user-name" placeholder="Как вас зовут?" required>
-  			</p>
-  			<p>
-  				<input type="email" name="user-email" placeholder="Ваша почта для ответа?" required>
-  			</p>
+  			<label for="user-name">Как вас зовут?</label>
+  			<input type="text" name="user-name" id="user-name" placeholder="Как вас зовут?" required>
+  			<label for="user-email">Ваша почта для ответа?</label>
+  			<input type="email" name="user-email" id="user-email" placeholder="Ваша почта для ответа?" required>
   			<textarea placeholder="Напишите что-нибудь.."></textarea>
   			<button type="submit" class="send-button">Отправить</button>
+  			<button class="modal-close" type="submit">x</button>
   		</form>
-  		<span class="modal-close">x</span>
   	</div>
   </body>
 </html>
