@@ -29,16 +29,13 @@
   				</li>
   			</ul>
   		</nav>
-  		<section class="user-menu">
-  			<h2 class="visually-hidden">Навигация пользователя</h2> <!-- Не забыть скрыть -->
-  			<article class="search">
-  				<h3 class="visually-hidden">Поиск</h3> <!-- Без заголовков валидатор ругается -->
+  		<div class="user-menu">
+  			<section class="search">
   				<a href="#">Поиск</a>
   				<label for="search">Поиск</label>
   				<input type="text" name="search" id="search" placeholder="Что ищем?">
-  			</article>
-  			<article class="authorize">
-  				<h3 class="visually-hidden">Авторизация на сайте</h3> <!-- Без заголовков валидатор ругается -->
+  			</section>
+  			<section class="authorize">
   				<a href="#">Вход</a>
 	  			<form method="post">
 	  				<label for="login">Электронная почта</label>
@@ -49,9 +46,8 @@
 			  		<a href="#">Новая регистрация</a>
 			  		<button type="submit" class="authorize-button">Войти</button>
 			  	</form>
-  			</article>
-			<article class="basket-with-products">
-				<h3 class="visually-hidden">Корзина</h3> <!-- Без заголовков валидатор ругается -->
+  			</section>
+			<section class="basket-with-products">
   				<a href="#">Корзина</a>
   				<table class="products-in-basket">
   					<tbody>
@@ -81,8 +77,8 @@
   				</table>
   				<span>Итого: 750 руб.</span>
   				<a href="#">Оформить заказ</a>
-  			</article>
-  		</section>	
+  			</section>
+  		</div>	
   		<div class="header-contacts">
 		  	<span>С&nbsp;10&nbsp;до&nbsp;20, ежедневно</span>
 		  	<span><a href="tel:+78124502525">8&nbsp;812 450-25-25</a></span>

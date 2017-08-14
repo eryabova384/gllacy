@@ -29,16 +29,13 @@
   				</li>
   			</ul>
   		</nav>
-  		<section class="user-menu">
-  			<h2 class="visually-hidden">Навигация пользователя</h2> <!-- Не забыть скрыть -->
-  			<article class="search">
-  				<h3 class="visually-hidden">Поиск</h3> <!-- Без заголовков валидатор ругается -->
+  		<div class="user-menu">	
+  			<section class="search">
   				<a href="#">Поиск</a>
   				<label for="search">Поиск</label>
   				<input type="text" name="search" id="search" placeholder="Что ищем?">
-  			</article>
-  			<article class="authorize">
-  				<h3 class="visually-hidden">Авторизация на сайте</h3> <!-- Без заголовков валидатор ругается -->
+  			</section>
+  			<section class="authorize">
   				<a href="#">Вход</a>
 	  			<form method="post">
 	  				<label for="login">Электронная почта</label>
@@ -49,12 +46,11 @@
 			  		<a href="#">Новая регистрация</a>
 			  		<button type="submit" class="authorize-button">Войти</button>
 			  	</form>
-  			</article>
-  			<article class="basket">
-  				<h3 class="visually-hidden">Корзина</h3> <!-- Без заголовков валидатор ругается -->
+  			</section>
+  			<section class="basket">
   				<a href="#">Корзина</a>
-  			</article>
-  		</section>	
+  			</section>
+  		</div>	
   		<div class="header-contacts">
 		  	<span>С&nbsp;10&nbsp;до&nbsp;20, ежедневно</span>
 		  	<span><a href="tel:+78124502525">8&nbsp;812 450-25-25</a></span>
@@ -62,12 +58,10 @@
   	</header>
   	<main class="page-content">
   		<h1 class="visually-hidden">Магазин &laquo;Gllacy&raquo;</h1> <!-- Не забыть скрыть -->
-  		<div class="main-slider">
-  			<ul class="slider-pagination">
-  				<li>Крем-брюле и&nbsp;пломбир с&nbsp;малиновым джемом</li>
-  				<li>Шоколадный пломбир и&nbsp;лимонный сорбет</li>
-  				<li>Пломбир с&nbsp;помадкой и&nbsp;клубничный щербет</li>
-  			</ul>
+  		<div class="main-slider"> <!-- Здесь будет слайдер без списков -->
+  			<a href="#">Крем-брюле и&nbsp;пломбир с&nbsp;малиновым джемом</a>
+  			<a href="#">Шоколадный пломбир и&nbsp;лимонный сорбет</a>
+  			<a href="#">Пломбир с&nbsp;помадкой и&nbsp;клубничный щербет</a>
   			<a href="#" class="button">Давайте оба!</a>
   		</div>
   		<div class="offers">
