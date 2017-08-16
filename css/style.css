@@ -1,0 +1,36 @@
+body {
+	font-size: 16px;
+	line-height: 22px;
+	color: #323232;
+	font-family: "Roboto", sans-serif;
+	background-color: #849d8f;
+}
+.visually-hidden {
+	display: none;
+}
+.offers-title,
+.catalog-title {
+	font-size: 35px;
+	font-weight: bold;
+	line-height: 41px;
+	color: #ffffff;
+}
+.lead-text,
+.article-title {
+	font-size: 24px;
+	line-height: 30px;
+}
+.article-title {
+	font-weight: bold;
+	text-decoration: underline;
+}
+.article-title a {
+	color: #323232;
+}
+.adress-map {
+	width: 1200px;
+	height: 427px;
+	background-image: url("../img/adress-map.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
