@@ -33,15 +33,15 @@
   		<div class="user-menu">	
   			<section class="search">
   				<a href="#">Поиск</a>
-  				<label for="search">Поиск</label>
+  				<label for="search" class="visually-hidden">Поиск</label>
   				<input type="text" name="search" id="search" placeholder="Что ищем?">
   			</section>
   			<section class="authorize">
   				<a href="#">Вход</a>
 	  			<form method="post">
-	  				<label for="login">Электронная почта</label>
+	  				<label for="login" class="visually-hidden">Электронная почта</label>
 	  				<input type="email" name="login" id="login" placeholder="Электронная почта" required>
-	  				<label for="password">Пароль</label>
+	  				<label for="password" class="visually-hidden">Пароль</label>
 			  		<input type="password" name="password" id="password" placeholder="Пароль" required>
 			  		<a href="#">Забыли пароль?</a>
 			  		<a href="#">Новая регистрация</a>
@@ -83,23 +83,31 @@
   		<section class="catalog-list">
   			<h2 class="visually-hidden">Популярные товары</h2>
 	  		<article class="catalog-item popular">
-		  		<h3>Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой</h3>
-	            <a href="#"><img src="img/product-1.png" width="267" height="267" alt="Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой"></a>
+	  			<a href="#">
+		  			<h3>Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой</h3>
+	           		<img src="img/product-1.png" width="267" height="267" alt="Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой">
+	           	</a>
 	            <p class="price">310 ₽<span>/кг</span></p>
 	        </article>
 	        <article class="catalog-item popular">
-		  		<h3>Сливочно-кофейное с&nbsp;кусочками шоколада</h3>
-	            <a href="#"><img src="img/product-2.png" width="267" height="267" alt="Сливочно-кофейное с&nbsp;кусочками шоколада"></a>
+	        	<a href="#">
+		  			<h3>Сливочно-кофейное с&nbsp;кусочками шоколада</h3>
+	            	<img src="img/product-2.png" width="267" height="267" alt="Сливочно-кофейное с&nbsp;кусочками шоколада">
+	            </a>
 	            <p class="price">380 ₽<span>/кг</span></p>
 	        </article>
 	        <article class="catalog-item popular">
+	        	<a href="#">
 		  			<h3>Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада</h3>
-	                <a href="#"><img src="img/product-3.png" width="267" height="267" alt="Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада"></a>
+	                <img src="img/product-3.png" width="267" height="267" alt="Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада">
+	            </a>
 	            	<p class="price">335 ₽<span>/кг</span></p>
 	        </article>
 	        <article class="catalog-item popular">
-		  		<h3>Сливочное крем-брюле с&nbsp;карамельной подливкой</h3>
-	            <a href="#"><img src="img/product-4.png" width="267" height="267" alt="Сливочное крем-брюле с&nbsp;карамельной подливкой"></a>
+	        	<a href="#">
+		  			<h3>Сливочное крем-брюле с&nbsp;карамельной подливкой</h3>
+	        		<img src="img/product-4.png" width="267" height="267" alt="Сливочное крем-брюле с&nbsp;карамельной подливкой">
+	        	</a>
 	            <p class="price">415 ₽<span>/кг</span></p>
 	        </article>
 	    </section>
@@ -120,7 +128,7 @@
 			<h2 class="visually-hidden">Подпишитесь на нашу рассылку</h2>
 		  	<h3>Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)</h3>
 		  	<form method="post">
-		  		<label for="subscribers-email">Электронная почта</label>
+		  		<label for="subscribers-email" class="visually-hidden">Электронная почта</label>
 		  		<input type="email" name="subscribers-email" id="subscribers-email" placeholder="Электронная почта">
 		  		<button type="submit" class="send-button">Отправить</button>
 		  	</form>
@@ -133,7 +141,7 @@
 		  		<p>Для заказов по&nbsp;телефону:</p>
 		  		<a href="tel:+78124502525">8&nbsp;812 450-25-25</a>
 		  		<p>(с&nbsp;10&nbsp;до&nbsp;20&nbsp;ежедневно)</p>
-		  		<a href="#" class="button">Форма обратной связи</a>
+		  		<button type="button" class="button">Форма обратной связи</button>
 		  	</div>
 		</div>
 	</main>
@@ -160,9 +168,9 @@
   	<div class="modal modal-feedback">
   		<h3>Мы&nbsp;обязательно вам ответим!</h3>
   		<form method="post">
-  			<label for="user-name">Как вас зовут?</label>
+  			<label for="user-name" class="visually-hidden">Как вас зовут?</label>
   			<input type="text" name="user-name" id="user-name" placeholder="Как вас зовут?" required>
-  			<label for="user-email">Ваша почта для ответа?</label>
+  			<label for="user-email" class="visually-hidden">Ваша почта для ответа?</label>
   			<input type="email" name="user-email" id="user-email" placeholder="Ваша почта для ответа?" required>
   			<textarea placeholder="Напишите что-нибудь.."></textarea>
   			<button type="submit" class="send-button">Отправить</button>
