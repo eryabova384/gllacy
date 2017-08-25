@@ -14,7 +14,7 @@
   			<ul class="main-menu">
   				<li>
   					<a href="#">Каталог</a>
-	  				<ul class="sub-menu catalog">
+	  				<ul class="sub-menu">
 			  			<li><a href="#">Новинки</a></li>
 			  			<li><a href="catalog.html">Сливочное</a></li>
 			  			<li><a href="#">Щербеты</a></li>
@@ -44,40 +44,38 @@
 			  		<input type="password" name="password" id="password" placeholder="Пароль" required>
 			  		<a href="#">Забыли пароль?</a>
 			  		<a href="#">Новая регистрация</a>
-			  		<button type="submit" class="authorize-button">Войти</button>
+			  		<button type="submit" class="button authorize-button">Войти</button>
 			  	</form>
   			</section>
   			<section class="basket">
-  				<a href="#">Корзина</a>
+  				<a href="#">Пусто</a>
   			</section>
   		</div>	
   		<div class="header-contacts">
-		  	<span>С&nbsp;10&nbsp;до&nbsp;20, ежедневно</span>
+		  	<span class="store-mode">С&nbsp;10&nbsp;до&nbsp;20, ежедневно</span>
 		  	<a href="tel:+78124502525">8&nbsp;812 450-25-25</a>
 		</div>
   	</header>
   	<main class="page-content">
   		<h1 class="visually-hidden">Магазин &laquo;Gllacy&raquo;</h1>
   		<div class="main-slider"> <!-- Здесь будет слайдер без списков -->
-  			<p>Крем-брюле и&nbsp;пломбир с&nbsp;малиновым джемом</p>
-  			<p>Шоколадный пломбир и&nbsp;лимонный сорбет</p>
-  			<p>Пломбир с&nbsp;помадкой и&nbsp;клубничный щербет</p>
+  			<p class="slider-text">Крем-брюле и&nbsp;пломбир с&nbsp;малиновым джемом</p>
+  			<p class="slider-text">Шоколадный пломбир и&nbsp;лимонный сорбет</p>
+  			<p class="slider-text">Пломбир с&nbsp;помадкой и&nbsp;клубничный щербет</p>
   			<a href="#" class="button">Давайте оба!</a>
   		</div>
   		<div class="offers">
   			<h2 class="visually-hidden">Наши предложения:</h2>
-  			<ul>
-  				<li>
+  			<section class="offers-item item-first">
   					<h3 class="offers-title">Малинка даром!</h3>
   					<p>При покупке 2&nbsp;кг любого фруктового мороженого, добавим в&nbsp;ваш заказ банку малинового варенья бесплатно.</p>
-  					<a href="#" class="button">Хочу варенье!</a>
-  				</li>
-  				<li>
+  					<a href="#" class="button hot-offers">Хочу варенье!</a>
+  			</section>
+  			<section class="offers-item item-second">
   					<h3 class="offers-title">Шоколадки даром!</h3>
   					<p>При покупке 2&nbsp;кг пломбира, добавим в&nbsp;ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-  					<a href="#" class="button">Хочу шоколадки!</a>
-  				</li>
-  			</ul>
+  					<a href="#" class="button hot-offers">Хочу шоколадки!</a>
+  			</section>
   		</div>
   		<section class="catalog-list">
   			<h2 class="visually-hidden">Популярные товары</h2>
@@ -113,34 +111,34 @@
   		<div class="about">
   			<p class="lead-text">Магазин Глейси&nbsp;&mdash; это онлайн и&nbsp;офлайн магазин по&nbsp;продаже мороженого собственного производства на&nbsp;развес</p>
 		  		<ul class="about-items">
-		  			<li>Все наше мороженое изготавливается на&nbsp;собственном производстве, с&nbsp;использованием современного оборудования и&nbsp;проверенных временем технологий.</li>
-		  			<li>Для приготовления мороженого используются настоящие сливки и&nbsp;молоко высочайшего качества. Все дополнительные ингредиенты и&nbsp;добавки произведены из&nbsp;натурального, экологически чистого сырья.</li>
-		  			<li>Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств и&nbsp;компаний, с&nbsp;которыми нас связывает долговременное сотрудничество.</li>
-		  			<li>Доставка нашего мороженого до&nbsp;заказчиков осуществляется в&nbsp;специальном термопаке, который не&nbsp;дает мороженому растаять в&nbsp;пути и&nbsp;позволяет сохранить превосходный вкус.</li>
+		  			<li class="ordinary-text">Все наше мороженое изготавливается на&nbsp;собственном производстве, с&nbsp;использованием современного оборудования и&nbsp;проверенных временем технологий.</li>
+		  			<li class="ordinary-text">Для приготовления мороженого используются настоящие сливки и&nbsp;молоко высочайшего качества. Все дополнительные ингредиенты и&nbsp;добавки произведены из&nbsp;натурального, экологически чистого сырья.</li>
+		  			<li class="ordinary-text">Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств и&nbsp;компаний, с&nbsp;которыми нас связывает долговременное сотрудничество.</li>
+		  			<li class="ordinary-text">Доставка нашего мороженого до&nbsp;заказчиков осуществляется в&nbsp;специальном термопаке, который не&nbsp;дает мороженому растаять в&nbsp;пути и&nbsp;позволяет сохранить превосходный вкус.</li>
 		  		</ul>
   		</div>
 		<article class="blog-article">
-		  	<span>Новое в&nbsp;нашем блоге</span>
+		  	<span class="ordinary-text">Новое в&nbsp;нашем блоге</span>
 		  	<h3 class="article-title"><a href="#">10&nbsp;способов сервировки фруктовых щербетов к&nbsp;столу</a></h3>
 		</article>
 		<section class="subscribe">
 			<h2 class="visually-hidden">Подпишитесь на нашу рассылку</h2>
-		  	<h3>Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)</h3>
+		  	<h3 class="ordinary-text">Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)</h3>
 		  	<form method="post">
 		  		<label for="subscribers-email" class="visually-hidden">Электронная почта</label>
 		  		<input type="email" name="subscribers-email" id="subscribers-email" placeholder="Электронная почта">
-		  		<button type="submit" class="send-button">Отправить</button>
+		  		<button type="submit" class="button send-button">Отправить</button>
 		  	</form>
 		</section>
 		<div class="adress-map">
 			<h2 class="visually-hidden">Контакты:</h2>
 		  	<div class="contacts">
-		  		<p>Адрес главного офиса и&nbsp;офлайн магазина:</p>
-		  		<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-		  		<p>Для заказов по&nbsp;телефону:</p>
-		  		<a href="tel:+78124502525">8&nbsp;812 450-25-25</a>
-		  		<p>(с&nbsp;10&nbsp;до&nbsp;20&nbsp;ежедневно)</p>
-		  		<button type="button" class="button">Форма обратной связи</button>
+		  		<p class="ordinary-text">Адрес главного офиса и&nbsp;офлайн магазина:</p>
+		  		<p class="big-text">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+		  		<p class="ordinary-text">Для заказов по&nbsp;телефону:</p>
+		  		<a class="big-text" href="tel:+78124502525">8&nbsp;812 450-25-25</a>
+		  		<p class="ordinary-text">(с&nbsp;10&nbsp;до&nbsp;20&nbsp;ежедневно)</p>
+		  		<button type="button" class="button send-button">Форма обратной связи</button>
 		  	</div>
 		</div>
 	</main>

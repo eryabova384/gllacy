@@ -1,9 +1,16 @@
 body {
 	font-size: 16px;
 	line-height: 22px;
-	color: #323232;
+	color: #ffffff;
 	font-family: "Roboto","Arial", sans-serif;
 	background-color: #849d8f;
+}
+.about-items,
+.footer-navigation,
+.main-menu,
+.sub-menu,
+.breadcrumbs {
+	list-style: none;
 }
 .visually-hidden {
 	position: absolute;
@@ -11,6 +18,110 @@ body {
 	width: 1px;
 	height: 1px;
 	margin: -1px;
+}
+.main-menu a {
+	font-weight: bold;
+	color: #ffffff;
+	line-height: 18px;
+}
+.user-menu a {
+	font-size: 14px;
+	color: #ffffff;
+	line-height: 16px;
+	text-decoration: none;
+}
+.sub-menu {
+	display: block;
+	width: 145px;
+	height: 110px;
+	background-color: #ffffff;
+}
+.sub-menu a {
+	font-size: 14px;
+	font-weight: normal;
+	color: #323232;
+	line-height: 16px;
+	text-decoration: none;
+}
+.sub-menu a:hover {
+	background-color: #fbded7;
+}
+.sub-menu a:active {
+	background-color: #f6b5a5;
+}
+.store-mode {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 16px;
+}
+.slider-text {
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 60px;
+}
+.header-contacts a {
+	font-size: 22px;
+	font-weight: bold;
+	color: #ffffff;
+	line-height: 24px;
+	text-decoration: none;
+}
+.button {
+	font-size: 32px;
+	font-weight: bold;
+	color: #ffffff;
+	line-height: 44px;
+	text-decoration: none;
+	background-color: #f16642;
+}
+.authorize-button {
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 16px;
+	background: rgba(255, 255, 255, 0.2);
+	border: none;
+}
+.send-button {
+	font-size: 18px;
+	line-height: 24px;
+}
+.offers p {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 22px;
+}
+.offers-item {
+	width: 560px;
+	height: 230px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.item-first {
+	background-image: url("../img/raspberry.jpg");
+}
+.item-second {
+	background-image: url("../img/choco.jpg");
+}
+.hot-offers {
+	font-size: 18px;
+	font-weight: bold;
+	color: #ffffff;
+	line-height: 24px;
+}
+.catalog-item a,
+.catalog-item h3 {
+	font-weight: normal;
+	color: #ffffff;
+	text-decoration: underline;
+}
+.price {
+	font-size: 45px;
+	font-weight: bold;
+	line-height: 45px;
+	text-shadow: 0 0 10px rgba(49, 50, 53, 0.5);
+}
+.price span {
+	font-size: 30px;
 }
 .offers-title,
 .catalog-title {
@@ -22,14 +133,50 @@ body {
 .lead-text,
 .article-title {
 	font-size: 24px;
+	color: #323232;
 	line-height: 30px;
+}
+.ordinary-text {
+	font-weight: normal;
+	color: #323232;
+	line-height: 22px;
+}
+.big-text {
+	font-size: 18px;
+	font-weight: bold;
+	color: #323232;
+	text-decoration: none;
+}
+.about {
+	width: 1145px;
+	height: 305px;
+	background-image: url("../img/waffles.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .article-title {
 	font-weight: bold;
+	color: #323232;
 	text-decoration: underline;
 }
 .article-title a {
 	color: #323232;
+}
+.blog-article {
+	width: 560px;
+	height: 220px;
+	background-image: url("../img/strawberries.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 50%;
+}
+.subscribe {
+	width: 560px;
+	height: 220px;
+	background-image: url("../img/mail-2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 50%;
 }
 .adress-map {
 	width: 1200px;
@@ -37,4 +184,22 @@ body {
 	background-image: url("../img/adress-map.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+.contacts {
+	width: 300px;
+	height: 305px;
+	background-color: #ffffff;
+}
+.footer-navigation,
+.footer-navigation a {
+	font-size: 13px;
+	font-weight: normal;
+	color: #ffffff;
+	text-decoration: underline;
+}
+.footer-copywright a,
+.footer-copywright p {
+	font-size: 12px;
+	font-weight: normal;
+	color: #ffffff;
 }
