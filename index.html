@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Глейси</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
   	<header class="page-header">
@@ -13,9 +14,9 @@
   		<nav class="page-navigation">
   			<ul class="main-menu">
   				<li>
-  					<a href="#">Каталог</a>
+  					<a href="#" class="link-catalog">Каталог</a>
 	  				<ul class="sub-menu">
-			  			<li><a href="#">Новинки</a></li>
+			  			<li><a href="#" class="link-new">Новинки</a></li>
 			  			<li><a href="catalog.html">Сливочное</a></li>
 			  			<li><a href="#">Щербеты</a></li>
 			  			<li><a href="#">Фруктовый лёд</a></li>
@@ -33,17 +34,17 @@
   		<div class="user-menu">	
   			<section class="search">
   				<a href="#">Поиск</a>
-  				<input type="text" name="search" id="search" placeholder="Что ищем?">
+  				<input class="form-input" type="text" name="search" id="search" placeholder="Что ищем?">
   			</section>
   			<section class="authorize">
   				<a href="#">Вход</a>
 	  			<form method="post">
 	  				<label for="login" class="visually-hidden">Электронная почта</label>
-	  				<input type="email" name="login" id="login" placeholder="Электронная почта" required>
+	  				<input class="form-input" type="email" name="login" id="login" placeholder="Электронная почта" required>
 	  				<label for="password" class="visually-hidden">Пароль</label>
-			  		<input type="password" name="password" id="password" placeholder="Пароль" required>
-			  		<a href="#">Забыли пароль?</a>
-			  		<a href="#">Новая регистрация</a>
+			  		<input class="form-input" type="password" name="password" id="password" placeholder="Пароль" required>
+			  		<a href="#" class="authorize-link">Забыли пароль?</a>
+			  		<a href="#" class="authorize-link">Новая регистрация</a>
 			  		<button type="submit" class="button authorize-button">Войти</button>
 			  	</form>
   			</section>
@@ -126,7 +127,7 @@
 		  	<h3 class="ordinary-text">Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)</h3>
 		  	<form method="post">
 		  		<label for="subscribers-email" class="visually-hidden">Электронная почта</label>
-		  		<input type="email" name="subscribers-email" id="subscribers-email" placeholder="Электронная почта">
+		  		<input class="form-input" type="email" name="subscribers-email" id="subscribers-email" placeholder="Электронная почта">
 		  		<button type="submit" class="button send-button">Отправить</button>
 		  	</form>
 		</section>
@@ -136,7 +137,7 @@
 		  		<p class="ordinary-text">Адрес главного офиса и&nbsp;офлайн магазина:</p>
 		  		<p class="big-text">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
 		  		<p class="ordinary-text">Для заказов по&nbsp;телефону:</p>
-		  		<a class="big-text" href="tel:+78124502525">8&nbsp;812 450-25-25</a>
+		  		<a class="big-text-link" href="tel:+78124502525">8&nbsp;812 450-25-25</a>
 		  		<p class="ordinary-text">(с&nbsp;10&nbsp;до&nbsp;20&nbsp;ежедневно)</p>
 		  		<button type="button" class="button send-button">Форма обратной связи</button>
 		  	</div>
@@ -166,11 +167,11 @@
   		<h3>Мы&nbsp;обязательно вам ответим!</h3>
   		<form method="post">
   			<label for="user-name" class="visually-hidden">Как вас зовут?</label>
-  			<input type="text" name="user-name" id="user-name" placeholder="Как вас зовут?" required>
+  			<input class="form-input" type="text" name="user-name" id="user-name" placeholder="Как вас зовут?" required>
   			<label for="user-email" class="visually-hidden">Ваша почта для ответа?</label>
-  			<input type="email" name="user-email" id="user-email" placeholder="Ваша почта для ответа?" required>
+  			<input class="form-input" type="email" name="user-email" id="user-email" placeholder="Ваша почта для ответа?" required>
   			<textarea placeholder="Напишите что-нибудь.."></textarea>
-  			<button type="submit" class="send-button">Отправить</button>
+  			<button type="submit" class="button send-button">Отправить</button>
   			<button class="modal-close" type="submit">x</button>
   		</form>
   	</div>
