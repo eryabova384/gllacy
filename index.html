@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Глейси</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   </head>
   <body>
   	<header class="page-header">
@@ -34,10 +34,10 @@
   		<div class="user-menu">	
   			<section class="search">
   				<a href="#">Поиск</a>
-  				<input class="form-input" type="text" name="search" id="search" placeholder="Что ищем?">
+  				<input class="form-input search" type="text" name="search" id="search" placeholder="Что ищем?">
   			</section>
   			<section class="authorize">
-  				<a href="#">Вход</a>
+  				<a href="#" class="a">Вход</a>
 	  			<form method="post">
 	  				<label for="login" class="visually-hidden">Электронная почта</label>
 	  				<input class="form-input" type="email" name="login" id="login" placeholder="Электронная почта" required>
@@ -82,28 +82,28 @@
   			<h2 class="visually-hidden">Популярные товары</h2>
 	  		<article class="catalog-item popular">
 	  			<a href="#">
-		  			<h3>Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой</h3>
+		  			<h3 class="item-title">Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой</h3>
 	           		<img src="img/product-1.png" width="267" height="267" alt="Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой">
 	           	</a>
 	            <p class="price">310 ₽<span>/кг</span></p>
 	        </article>
 	        <article class="catalog-item popular">
 	        	<a href="#">
-		  			<h3>Сливочно-кофейное с&nbsp;кусочками шоколада</h3>
+		  			<h3 class="item-title">Сливочно-кофейное с&nbsp;кусочками шоколада</h3>
 	            	<img src="img/product-2.png" width="267" height="267" alt="Сливочно-кофейное с&nbsp;кусочками шоколада">
 	            </a>
 	            <p class="price">380 ₽<span>/кг</span></p>
 	        </article>
 	        <article class="catalog-item popular">
 	        	<a href="#">
-		  			<h3>Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада</h3>
+		  			<h3 class="item-title">Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада</h3>
 	                <img src="img/product-3.png" width="267" height="267" alt="Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада">
 	            </a>
 	            	<p class="price">335 ₽<span>/кг</span></p>
 	        </article>
 	        <article class="catalog-item popular">
 	        	<a href="#">
-		  			<h3>Сливочное крем-брюле с&nbsp;карамельной подливкой</h3>
+		  			<h3 class="item-title">Сливочное крем-брюле с&nbsp;карамельной подливкой</h3>
 	        		<img src="img/product-4.png" width="267" height="267" alt="Сливочное крем-брюле с&nbsp;карамельной подливкой">
 	        	</a>
 	            <p class="price">415 ₽<span>/кг</span></p>
@@ -127,7 +127,7 @@
 		  	<h3 class="ordinary-text">Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)</h3>
 		  	<form method="post">
 		  		<label for="subscribers-email" class="visually-hidden">Электронная почта</label>
-		  		<input class="form-input" type="email" name="subscribers-email" id="subscribers-email" placeholder="Электронная почта">
+		  		<input class="form-input subscribe-form" type="email" name="subscribers-email" id="subscribers-email" placeholder="Электронная почта">
 		  		<button type="submit" class="button send-button">Отправить</button>
 		  	</form>
 		</section>
@@ -167,11 +167,11 @@
   		<h3>Мы&nbsp;обязательно вам ответим!</h3>
   		<form method="post">
   			<label for="user-name" class="visually-hidden">Как вас зовут?</label>
-  			<input class="form-input" type="text" name="user-name" id="user-name" placeholder="Как вас зовут?" required>
+  			<input class="form-input feedback" type="text" name="user-name" id="user-name" placeholder="Как вас зовут?" required>
   			<label for="user-email" class="visually-hidden">Ваша почта для ответа?</label>
-  			<input class="form-input" type="email" name="user-email" id="user-email" placeholder="Ваша почта для ответа?" required>
-  			<textarea placeholder="Напишите что-нибудь.."></textarea>
-  			<button type="submit" class="button send-button">Отправить</button>
+  			<input class="form-input feedback" type="email" name="user-email" id="user-email" placeholder="Ваша почта для ответа?" required>
+  			<textarea class="feedback-text" placeholder="Напишите что-нибудь.."></textarea>
+  			<button type="button" class="button send-button">Отправить</button>
   			<button class="modal-close" type="submit">x</button>
   		</form>
   	</div>

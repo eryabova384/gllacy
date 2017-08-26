@@ -22,6 +22,7 @@ body {
 }
 /* Ссылки, текстовые стили */
 .main-menu a {
+	font-size: 16px;
 	font-weight: bold;
 	color: #ffffff;
 	line-height: 18px;
@@ -113,18 +114,15 @@ body {
 	line-height: 41px;
 	color: #ffffff;
 }
-.catalog-item a,
-.catalog-item h3 {
+.item-title {
 	font-size: 16px;
 	font-weight: normal;
 	color: #ffffff;
 	line-height: 22px;
 	text-decoration: underline;
 }
-.catalog-item a:hover,
-.catalog-item a:active,
-.catalog-item h3:hover,
-.catalog-item h3:active {
+.item-title:hover,
+.item-title:active {
 	color: #ffbc9e;
 }
 .price {
@@ -202,17 +200,61 @@ body {
 	color: #323232;
 	line-height: 28px;
 }
+.catalog-pagination a {
+	font-size: 16px;
+	color: #ffffff;
+	line-height: 18px;
+	text-decoration: none;
+}
+.catalog-pagination .pagination-current {
+	color: #323232;
+	background-color: #ffffff;
+	border-radius: 50%;
+}
+.catalog-pagination a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+}
+.catalog-pagination a:active {
+	color: #323232;
+	background-color: #ffffff;
+	border-radius: 50%;
+}
 /* Инпуты, чекбоксы, радио */
 .form-input
  {
 	border: 1px solid #d3d3d2;
-	border-radius: 5px;
+	width: 240px;
+	min-height: 40px;
+	box-sizing: border-box;
+	border-radius: 5px; 	
 }
-.form-input:hover
+.search {
+	width: 310px;
+	min-height: 44px;
+}
+.subscribe-form {
+	width: 368px;
+	min-height: 44px;
+}
+.feedback {
+	width: 267px;
+	min-height: 44px;
+}
+.feedback-text {
+	width: 428px;
+	min-height: 155px;
+	border: 1px solid #d3d3d2;
+	box-sizing: border-box;
+	border-radius: 5px; 	
+}
+.form-input:hover,
+.feedback-text:hover
  {
-	border: 2px solid #c7c6c5;
+ 	border: 2px solid #c7c6c5;
 }
-.form-input:focus
+.form-input:focus,
+.feedback-text:focus
  {
 	border: 2px solid #8fbdec;
 	outline: none;
@@ -245,6 +287,11 @@ input[type="checkbox"] {
 .send-button {
 	font-size: 18px;
 	line-height: 24px;
+}
+.quick-view {
+	font-size: 18px;
+	font-weight: bold;
+	color: #ffffff;
 }
 /*Фоны и блоки*/
 .sub-menu {
@@ -287,6 +334,7 @@ input[type="checkbox"] {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 100% 50%;
+	box-sizing: border-box;
 }
 .adress-map {
 	width: 1200px;
@@ -299,4 +347,16 @@ input[type="checkbox"] {
 	width: 300px;
 	min-height: 305px;
 	background-color: #ffffff;
+}
+.authorize {
+	width: 277px;
+	min-height: 215px;
+	background: #ffffff;
+	box-sizing: border-box;
+}
+.modal {
+	width: 478px;
+	min-height: 443px;
+	background: #ffffff;
+	box-sizing: border-box;
 }
