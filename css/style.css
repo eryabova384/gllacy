@@ -156,6 +156,10 @@ body {
 	color: #323232;
 	line-height: 22px;
 }
+.text-small {
+	font-size: 14px;
+	line-height: 20px;
+}
 .big-text,
 .big-text-link {
 	font-size: 18px;
