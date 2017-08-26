@@ -179,7 +179,7 @@ body {
 	color: #ffffff;
 	text-decoration: underline;
 }
-.footer-navigation > li:first-child > a {
+.footer-navigation .for-partners {
 	font-weight: bold;
 }
 .footer-navigation a:hover,
@@ -309,41 +309,51 @@ input[type="checkbox"] {
 	min-height: 230px;
 	background-repeat: no-repeat;
 	background-size: cover;
+	border-radius: 12px;
 }
 .item-first {
 	background-image: url("../img/raspberry.jpg");
+	background-color: #854450;
 }
 .item-second {
 	background-image: url("../img/choco.jpg");
+	background-color: #715c54;
 }
 .about {
 	width: 1145px;
 	min-height: 305px;
 	background-image: url("../img/waffles.jpg");
+	background-color: #d8ccb2;
 	background-repeat: no-repeat;
 	background-size: cover;
+	border-radius: 12px;
 }
 .blog-article {
 	width: 560px;
 	min-height: 220px;
 	background-image: url("../img/strawberries.jpg");
+	background-color: #ffffff;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 100% 50%;
+	border-radius: 12px;
 }
 .subscribe {
 	width: 560px;
 	min-height: 220px;
 	background-image: url("../img/mail-2.jpg");
+	background-color: #92cdff;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 100% 50%;
 	box-sizing: border-box;
+	border-radius: 12px;
 }
 .adress-map {
 	width: 1200px;
 	min-height: 427px;
 	background-image: url("../img/adress-map.jpg");
+	background-color: #cee0c0;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -351,6 +361,7 @@ input[type="checkbox"] {
 	width: 300px;
 	min-height: 305px;
 	background-color: #ffffff;
+	border-radius: 12px;
 }
 .authorize {
 	width: 277px;
@@ -363,4 +374,5 @@ input[type="checkbox"] {
 	min-height: 443px;
 	background: #ffffff;
 	box-sizing: border-box;
+	border-radius: 12px;
 }
