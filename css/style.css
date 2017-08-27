@@ -1,9 +1,12 @@
 /* Глобальные, общие */
 body {
+	width: 1200px;
 	font-size: 16px;
 	line-height: 22px;
 	color: #ffffff;
 	font-family: "Roboto","Arial", sans-serif;
+	/*background: url(../img/gllacy-index-1200.jpg) no-repeat;
+	opacity: 0.2; */
 	background-color: #849d8f;
 }
 .about-items,
@@ -11,6 +14,8 @@ body {
 .main-menu,
 .sub-menu,
 .breadcrumbs {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 .visually-hidden {
@@ -19,6 +24,10 @@ body {
 	width: 1px;
 	height: 1px;
 	margin: -1px;
+}
+.container {
+	width: 1145px;
+	margin: 0 auto;
 }
 /* Ссылки, текстовые стили */
 .main-menu a {
@@ -224,6 +233,21 @@ body {
 	background-color: #ffffff;
 	border-radius: 50%;
 }
+.basket-products {
+	font-size: 13px;
+	font-weight: normal;
+	color: #323232;
+	line-height: 16px;
+}
+.basket-products .products-price {
+	color: #999999;
+}
+.basket-cost {
+	font-size: 15px;
+	font-weight: bold;
+	color: #323232;
+	line-height: 18px;
+}
 /* Инпуты, чекбоксы, радио */
 .form-input
  {
@@ -233,7 +257,7 @@ body {
 	box-sizing: border-box;
 	border-radius: 5px; 	
 }
-.search {
+.search-input {
 	width: 310px;
 	min-height: 44px;
 }
@@ -296,12 +320,17 @@ input[type="checkbox"] {
 	font-size: 18px;
 	font-weight: bold;
 	color: #ffffff;
+	display: none;
 }
 /*Фоны и блоки*/
 .sub-menu {
-	display: block;
+  	position: absolute;
+  	top: 50px;
+  	left: 190px;
+  	margin: 0;
+  	padding: 0;
 	width: 145px;
-	height: 110px;
+	min-height: 110px;
 	background-color: #ffffff;
 }
 .offers-item {
@@ -314,6 +343,7 @@ input[type="checkbox"] {
 .item-first {
 	background-image: url("../img/raspberry.jpg");
 	background-color: #854450;
+	margin-right: 27px;
 }
 .item-second {
 	background-image: url("../img/choco.jpg");
@@ -337,6 +367,7 @@ input[type="checkbox"] {
 	background-size: cover;
 	background-position: 100% 50%;
 	border-radius: 12px;
+	margin-right: 27px;
 }
 .subscribe {
 	width: 560px;
@@ -356,6 +387,7 @@ input[type="checkbox"] {
 	background-color: #cee0c0;
 	background-repeat: no-repeat;
 	background-size: cover;
+	margin-top: 40px;
 }
 .contacts {
 	width: 300px;
@@ -364,15 +396,106 @@ input[type="checkbox"] {
 	border-radius: 12px;
 }
 .authorize {
-	width: 277px;
-	min-height: 215px;
-	background: #ffffff;
+	/*background: #ffffff; */
 	box-sizing: border-box;
 }
 .modal {
+	display: none;
 	width: 478px;
 	min-height: 443px;
 	background: #ffffff;
 	box-sizing: border-box;
 	border-radius: 12px;
+}
+.page-header {
+	padding: 0;
+	margin: 0;
+}
+.products-in-basket {
+	background-color: #ffffff;
+	width: 540px;
+	position: absolute;
+}
+.header-logo {
+	width: 155px;
+	height: 65px;
+	margin-right: 27px;
+}
+.page-navigation {
+	display: flex;
+	flex-direction: row;
+}
+.main-menu {
+	display: flex;
+	flex-direction: row;
+	min-width: 360px;
+	margin: 0;
+	padding: 0;
+	align-items: center;
+}
+.main-menu li {
+	margin-right: 27px;
+}
+.user-menu {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+.user-menu .search {
+	margin-left: 360px;
+	margin-right: 10px;
+}
+.user-menu .basket {
+	margin-left: 10px;
+}
+.header-contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.offers {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+.catalog-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	width: 1145px;
+	justify-content: space-between;
+}
+.catalog-item {
+	width: 268px;
+	text-align: center;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+.catalog-item .item-title {
+	order: 1;
+}
+
+.blog-and-subscribe {
+	margin-top: 53px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+.footer {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+.footer-navigation {
+	display: flex;
+	flex-direction: column;
+}
+.footer-copywright {
+	display: flex;
+	flex-direction: row;
 }

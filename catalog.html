@@ -8,10 +8,10 @@
   </head>
   <body>
   	<header class="page-header">
-  		<div class="header-logo">
-  			<a href="index.html"><img src="img/logo.svg" alt="Gllacy shop" width="155" height="65"></a>
-  		</div>
   		<nav class="page-navigation">
+  			<div class="header-logo">
+  				<a href="index.html"><img src="img/logo.svg" alt="Gllacy shop" width="155" height="65"></a>
+  			</div>
   			<ul class="main-menu">
   				<li>
   					<a href="#" class="link-catalog">Каталог</a>
@@ -30,69 +30,69 @@
   					<a href="#">О&nbsp;Компании</a>
   				</li>
   			</ul>
-  		</nav>
-  		<div class="user-menu">
-  			<section class="search">
-  				<a href="#">Поиск</a>
-  				<input class="form-input search" type="text" name="search" id="search" placeholder="Что ищем?">
-  			</section>
-  			<section class="authorize">
-  				<a href="#">Вход</a>
-	  			<form method="post">
-	  				<label for="login" class="visually-hidden">Электронная почта</label>
-	  				<input class="form-input" type="email" name="login" id="login" placeholder="Электронная почта" required>
-	  				<label for="password" class="visually-hidden">Пароль</label>
-			  		<input class="form-input" type="password" name="password" id="password" placeholder="Пароль" required>
-			  		<a href="#" class="authorize-link">Забыли пароль?</a>
-			  		<a href="#" class="authorize-link">Новая регистрация</a>
-			  		<button type="submit" class="button authorize-button">Войти</button>
-			  	</form>
-  			</section>
-			<section class="basket with-products">
-  				<a href="#">Корзина</a>
-  				<table class="products-in-basket">
-  					<tbody>
-  						<tr class="visually-hidden">
-  							<th>Удалить</th>
-  							<th>Изображение</th>
-  							<th>Название товара</th>
-  							<th>Количество</th>
-  							<th>Цена</th>
-  							</tr>
-  						<tr>
-  							<td>
-	  							<button type="button">Удалить</button>
-	  						</td>
-	  						<td>
-	  							<a href="#"><img src="img/product-1-small.png" width="33 height="33" alt="Пломбир с&nbsp;апельсиновым джемом"></a>
-	  						</td>
-	  						<td>Пломбир с&nbsp;апельсиновым джемом</td>
-	  						<td>1,5 кг х 200 руб.</td>
-	  						<td>300 руб.</td>
-  						</tr>
-  						<tr>
-  							<td>
-	  							<button type="button">Удалить</button>
-	  						</td>
-  							<td>
-  								<a href="#"><img src="img/product-3-small.png" width="33 height="33" alt="Клубничный пломбир с&nbsp;присыпкой из&nbsp;белого шоколада"></a>
-  							</td>
-  							<td>Клубничный пломбир с&nbsp;присыпкой из&nbsp;белого шоколада</td>
-  							<td>1,5 кг х 300 руб.</td>
-  							<td>450 руб.</td>
-  						</tr>
-  					</tbody>
-  				</table>
-  				<span>Итого: 750 руб.</span>
-  				<a href="#">Оформить заказ</a>
-  			</section>
-  		</div>	
-  		<div class="header-contacts">
-		  	<span class="store-mode">С&nbsp;10&nbsp;до&nbsp;20, ежедневно</span>
-		  	<a href="tel:+78124502525">8&nbsp;812 450-25-25</a>
-		</div>
-  	</header>
-  	<main class="page-content">
+	  		<div class="user-menu">
+	  			<section class="search">
+	  				<a href="#">Поиск</a>
+	  				<input class="form-input search-input visually-hidden type="text" name="search" id="search" placeholder="Что ищем?">
+	  			</section>
+	  			<section class="authorize">
+	  				<a href="#">Вход</a>
+		  			<!-- <form method="post">
+		  				<label for="login" class="visually-hidden">Электронная почта</label>
+		  				<input class="form-input" type="email" name="login" id="login" placeholder="Электронная почта" required>
+		  				<label for="password" class="visually-hidden">Пароль</label>
+				  		<input class="form-input" type="password" name="password" id="password" placeholder="Пароль" required>
+				  		<a href="#" class="authorize-link">Забыли пароль?</a>
+				  		<a href="#" class="authorize-link">Новая регистрация</a>
+				  		<button type="submit" class="button authorize-button">Войти</button>
+				  	</form>  -->
+	  			</section>
+				<section class="basket with-products">
+	  				<a href="#">Корзина</a>
+	  				<table class="products-in-basket">
+	  					<tbody>
+	  						<tr class="visually-hidden">
+	  							<th>Удалить</th>
+	  							<th>Изображение</th>
+	  							<th>Название товара</th>
+	  							<th>Количество</th>
+	  							<th>Цена</th>
+	  							</tr>
+	  						<tr>
+	  							<td>
+		  							<button type="button">Удалить</button>
+		  						</td>
+		  						<td>
+		  							<a href="#"><img src="img/product-1-small.png" width="33 height="33" alt="Пломбир с&nbsp;апельсиновым джемом"></a>
+		  						</td>
+		  						<td class="basket-products">Пломбир с&nbsp;апельсиновым джемом</td>
+		  						<td class="basket-products">1,5 кг х <span class="basket-products products-price">200 руб.</span></td>
+		  						<td class="basket-products">300 руб.</td>
+	  						</tr>
+	  						<tr>
+	  							<td>
+		  							<button type="button">Удалить</button>
+		  						</td>
+	  							<td>
+	  								<a href="#"><img src="img/product-3-small.png" width="33 height="33" alt="Клубничный пломбир с&nbsp;присыпкой из&nbsp;белого шоколада"></a>
+	  							</td>
+	  							<td class="basket-products">Клубничный пломбир с&nbsp;присыпкой из&nbsp;белого шоколада</td>
+	  							<td class="basket-products">1,5 кг х <span class="basket-products products-price">300 руб.</span></td>
+	  							<td class="basket-products">450 руб.</td>
+	  						</tr>
+	  					</tbody>
+	  				</table>
+	  				<span class="basket-cost visually-hidden">Итого: 750 руб.</span>
+	  				<a href="#" class="button send-button visually-hidden">Оформить заказ</a>
+	  			</section>
+	  		</div>
+	  	</nav>
+	  		<div class="header-contacts">
+			  	<span class="store-mode">С&nbsp;10&nbsp;до&nbsp;20, ежедневно</span>
+			  	<a href="tel:+78124502525">8&nbsp;812 450-25-25</a>
+			</div>
+	  	</header>
+  	<main class="page-content container">
   		<div>
   			<ul class="breadcrumbs">
   				<li><a href="index.html">Главная</a></li>
