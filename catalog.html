@@ -15,7 +15,7 @@
 	  			</div>
 	  			<ul class="main-menu">
 	  				<li class="link-catalog">
-	  					<a href="#">Каталог</a>
+	  					<a class="main-menu-link" href="#">Каталог</a>
 		  				<ul class="sub-menu">
 				  			<li><a href="#" class="link-new">Новинки</a></li>
 				  			<li><a>Сливочное</a></li>
@@ -25,32 +25,36 @@
 		  				</ul>
 	  				</li>
 	  				<li>
-	  					<a href="#">Доставка и&nbsp;оплата</a>
+	  					<a class="main-menu-link" href="#">Доставка и&nbsp;оплата</a>
 	  				</li>
 	  				<li>
-	  					<a href="#">О&nbsp;Компании</a>
+	  					<a class="main-menu-link" href="#">О&nbsp;Компании</a>
 	  				</li>
 	  			</ul>
 		  		<div class="user-menu">
 		  			<section class="search">
-		  				<a href="#">Поиск</a>
-		  				<input class="form-input search-input visually-hidden type="text" name="search" id="search" placeholder="Что ищем?">
+		  				<a href="#" class="link-search">Поиск</a>
+					  	<div class="search-wrapper">
+					  		<input class="form-input search-input" type="text" name="search" id="search" placeholder="Что ищем?">
+					  	</div>
 		  			</section>
 		  			<section class="authorize">
-		  				<a href="#">Вход</a>
-			  			<!-- <form method="post">
-			  				<label for="login" class="visually-hidden">Электронная почта</label>
-			  				<input class="form-input" type="email" name="login" id="login" placeholder="Электронная почта" required>
-			  				<label for="password" class="visually-hidden">Пароль</label>
-					  		<input class="form-input" type="password" name="password" id="password" placeholder="Пароль" required>
-					  		<a href="#" class="authorize-link">Забыли пароль?</a>
-					  		<a href="#" class="authorize-link">Новая регистрация</a>
-					  		<button type="submit" class="button authorize-button">Войти</button>
-					  	</form>  -->
-		  			</section>
+					  	<a href="#" class="authorize-link-entrance">Вход</a>
+					  		<div class="authorize-wrapper">
+						  		<form method="post">
+						  				<label for="login" class="visually-hidden">Электронная почта</label>
+						  				<input class="form-input" type="email" name="login" id="login" placeholder="Электронная почта" required>
+						  				<label for="password" class="visually-hidden">Пароль</label>
+								  		<input class="form-input" type="password" name="password" id="password" placeholder="Пароль" required>
+								  		<a href="#" class="authorize-link">Забыли пароль?</a>
+								  		<a href="#" class="authorize-link">Новая регистрация</a>
+								  		<button type="submit" class="button authorize-button">Войти</button>
+								</form>
+							</div>
+					</section>
 					<section class="basket with-products">
 		  				<a href="#">Корзина</a>
-		  				<table class="products-in-basket">
+		  				<table class="products-in-basket visually-hidden">
 		  					<tbody>
 		  						<tr class="visually-hidden">
 		  							<th>Удалить</th>
@@ -86,7 +90,7 @@
 		  						</tr>
 		  					</tbody>
 		  				</table>
-		  				<a href="#" class="button send-button">Оформить заказ</a>
+		  				<a href="#" class="button send-button visually-hidden">Оформить заказ</a>
 		  			</section>
 		  		</div>
 		  	</nav>
@@ -116,10 +120,22 @@
 						  			<option>по&nbsp;жирности</option>
 						  		</select>
 					  		<span>Цена:</span>
-					  		<input type="text" name="price" id="price" placeholder="100 руб.&nbsp;&mdash;&nbsp;500&nbsp;руб.">
-					  		<div class="price-range">
-					  			<!-- Здесь будет ползунок-->
-					  		</div>
+					  		<div class="price-constraints">
+						  		<input type="text" name="price-min" id="price-min" value="100">
+						  		<label class="price-min" for="price-min">руб.</label>
+						  		<input type="text" name="price-max" id="price-max" value="500">
+						  		<label for="price-max">руб.</label>
+						  	</div>
+						  	<div class="price-range-wrapper">
+						  		<div class="price-range">
+						  			<div class="price-scale">
+						  				<div class="price-bar">
+						  				</div>
+						  			</div>
+						  			<div class="range-toggle range-toggle-min"></div>
+									<div class="range-toggle range-toggle-max"></div>
+						  		</div>
+						  	</div>
 					  		<fieldset class="fat">
 					  			<legend>Жирность:</legend>
 					  			<input type="radio" name="fat-amount" id="fat-amount-0" value="0-percent">
