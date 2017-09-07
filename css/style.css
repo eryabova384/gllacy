@@ -61,6 +61,8 @@ body {
 	line-height: 18px;
 	text-decoration: none;
 	padding: 7px 11px;
+}
+.main-menu-link span {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .main-menu .link-catalog {
@@ -604,6 +606,12 @@ select[name="sort"]:hover {
 	background: linear-gradient(to top, #e74a35, #f26843);
 	box-shadow: 2px 2px 2px rgba(160, 32, 11, 0.64);
 }
+.order-button {
+	width: 170px;
+	padding: 15px 0;
+	margin-right: 15px;
+	margin-top: 18px;
+}
 .authorize-button {
 	font-size: 18px;
 	line-height: 24px;
@@ -762,7 +770,7 @@ select[name="sort"]:hover {
 .subscribe {
 	width: 560px;
 	min-height: 220px;
-	background-image: url("../img/mail-2.jpg");
+	background-image: repeating-linear-gradient(135deg, #f8f7f4, #f8f7f4 7px, #94ceff 7px, #94ceff 14px, #f8f7f4 14px, #f8f7f4 21px, #fe9e90 21px, #fe9e90 28px);
 	background-color: #92cdff;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -789,11 +797,8 @@ select[name="sort"]:hover {
 	background-position: 50% 50%;
 	margin-top: 40px;
 	width: 100%;
-	overflow: hidden;
 }
 .adress-map iframe {
-	position: relative;
-  	z-index: 2;
 	border: none;
 }
 .contacts-wrapper {
@@ -802,7 +807,7 @@ select[name="sort"]:hover {
 .contacts {
 	position: absolute;
 	width: 300px;
-	top: 60px;
+	top: -380px;
 	right: 27px;
 	min-height: 305px;
 	background-color: #ffffff;
@@ -824,14 +829,57 @@ select[name="sort"]:hover {
 	padding: 0;
 	margin: 0;
 }
-.products-in-basket {
-	background-color: #ffffff;
-	border-radius: 5px;
+.products-wrapper {
+	display: none;
 	width: 540px;
+	min-height: 242px;
+	background-color: #f8f7f4;
 	position: absolute;
+	width: 540px;
+	right: 0;
+	top: 35px;
+	border-radius: 5px;
+	z-index: 20;
+	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.products-in-basket {
+	border-radius: 5px;
+	text-align: left;
+}
+.products-in-basket button:before {
+	content: url("../img/cross-small.svg");
+	position: absolute;
+	left: 20px;
+	width: 15px;
+	height: 15px;
+}
+.basket-summary:before {
+	content: '';
+	position: absolute;
+	top: -15px;
+	left: 15px;
+	right: 15px;
+	vertical-align: middle;
+	box-sizing: border-box;
+	height: 1px;
+  	background: rgba(53, 53, 53, 0.2);
 }
 .basket-summary {
-	text-align: right;
+	margin-top: 35px;
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.basket-summary span {
+	color: #323232;
+	line-height: 18px;
+	font-weight: bold;
+	margin-right: 15px;
+}
+.basket:hover .products-wrapper {
+	display: block;
 }
 .header-logo {
 	width: 155px;
@@ -849,19 +897,18 @@ select[name="sort"]:hover {
 	display: flex;
 	margin: 0;
 	padding: 0;
-	min-width: 360px;
+	min-width: 330px;
 	align-items: center;
 	justify-content: space-between;
+	margin-right: 345px;
 }
 .user-menu {
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 	margin: 0;
 	padding: 0;
 }
 .user-menu .search {
-	margin-left: 360px;
 	margin-right: 10px;
 }
 .user-menu .basket {
@@ -940,18 +987,46 @@ select[name="sort"]:hover {
 .about-items {
 	display: flex;
 	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
 	align-content: center;
-	justify-content: space-around;
+	padding-left: 75px;
+	padding-right: 30px;
+	justify-content: space-between;
 }
 .list-item {
 	display: flex;
-	width: 500px;
+	flex-wrap: wrap;
+	width: 50%;
 	position: relative;
+	margin-bottom: 10px;
 }
 .list-item:first-child:before {
 	content: url("../img/ice-cream.svg");
 	position: absolute;
-	margin-left: 20px;
+	left: -55px;
+	top: -15px;
+}
+.list-item:nth-child(2):before {
+	content: url("../img/cow.svg");
+	position: absolute;
+	left: -55px;
+	top: -15px;
+}
+.list-item:nth-child(3):before {
+	content: url("../img/eco.svg");
+	position: absolute;
+	left: -55px;
+	top: -15px;
+}
+.list-item:last-child:before {
+	content: url("../img/thermometer.svg");
+	position: absolute;
+	left: -55px;
+	top: -15px;
+}
+.page-footer {
+	margin-top: 35px;
 }
 .footer-navigation {
 	display: flex;
@@ -1001,6 +1076,19 @@ select[name="sort"]:hover {
 	border: 4px solid rgba(255,255,255, 0.7);
 	box-shadow: inset 0px 2px 1px #888888;
 }
+.footer-catalog {
+	position: relative;
+}
+.footer-catalog:before {
+	content: '';
+	position: absolute;
+	top: -20px;
+	vertical-align: middle;
+	box-sizing: border-box;
+	width: 100%;
+	height: 1px;
+  	background: rgba(255, 255, 255, 0.3);
+}
 .breadcrumbs {
 	display: flex;
 	flex-wrap: wrap;
@@ -1015,6 +1103,9 @@ select[name="sort"]:hover {
 	margin-right: 22px;
 	text-decoration: none;
 	position: relative;
+}
+.breadcrumb-item a {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .breadcrumb-item:after {
 	content: '»';
