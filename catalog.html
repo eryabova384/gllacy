@@ -124,21 +124,27 @@
 		  		<h1 class="catalog-title">Сливочное мороженое</h1>
 		  		<div class="filter-horizontal">
 		  			<h2 class="visually-hidden">Фильтр товаров</h2>
-		  			<form method="post">
-		  				<div class="filter-horizontal-line">
-					  		<label for="sort">Сортировка:</label>
-						  		<select name="sort" id="sort">
-						  			<option>по&nbsp;популярности</option>
-						  			<option>сначала недорогие</option>
-						  			<option>сначала дорогие</option>
-						  			<option>по&nbsp;жирности</option>
-						  		</select>
-					  		<span>Цена:</span>
+		  			<div class="filter-wrap">
+		  				<div class="filter-sort">
+		  					<form method="post">
+						  		<label for="sort">Сортировка:</label>
+							  	<select name="sort" id="sort">
+							  		<option>по&nbsp;популярности</option>
+							  		<option>сначала недорогие</option>
+							  		<option>сначала дорогие</option>
+							  		<option>по&nbsp;жирности</option>
+							  	</select>
+							 </form>
+						</div>
+						<div class="filter-price">
 					  		<div class="price-constraints">
-						  		<input type="text" name="price-min" id="price-min" value="100">
-						  		<label class="price-min" for="price-min">руб.</label>
-						  		<input type="text" name="price-max" id="price-max" value="500">
-						  		<label for="price-max">руб.</label>
+					  			<form method="post">
+					  				<span>Цена:</span>
+							  		<input type="text" name="price-min" id="price-min" value="100">
+							  		<label class="price-min" for="price-min">руб.</label>
+							  		<input type="text" name="price-max" id="price-max" value="500">
+							  		<label for="price-max">руб.</label>
+							  	</form>
 						  	</div>
 						  	<div class="price-range-wrapper">
 						  		<div class="price-range">
@@ -150,6 +156,9 @@
 									<div class="range-toggle range-toggle-max"></div>
 						  		</div>
 						  	</div>
+						</div>
+					<div class="filter-fat">
+						<form method="post">
 					  		<fieldset class="fat">
 					  			<legend>Жирность:</legend>
 					  			<input type="radio" name="fat-amount" id="fat-amount-0" value="0-percent">
@@ -161,8 +170,12 @@
 					  			<input type="radio" name="fat-amount" id="fat-amount-more-30" value="more-30-percent">
 					  			<label for="fat-amount-more-30">выше&nbsp;30%</label>
 					  		</fieldset>
-				  		</div>
-				  		<div class="filter-horizontal-line">
+					  	</form>
+				  	</div>
+				</div>
+				<div class="filter-wrap">
+					<div class="filter-fillers">
+						<form method="post">
 							<fieldset class="fillers">
 					  			<legend>Наполнители:</legend>
 					  			<input type="checkbox" id="choko" name="choko" checked>
@@ -176,10 +189,14 @@
 					  			<input type="checkbox" id="jam" name="jam">
 					  			<label for="jam">джемы</label>
 					  		</fieldset>
-					  		<button type="submit" class="apply-button">Применить</button>
-				  		</div>
-				  	</form>
-			  	</div>
+					  	</form>
+				  	</div>
+				  	<div class="filter-apply">
+				  		<form method="post">
+				  			<button type="submit" class="apply-button">Применить</button>
+				  		</form>
+				  	</div>
+				</div>	
 			  	<section class="catalog-list">
 			  			<h2 class="visually-hidden">Каталог товаров</h2>
 			  			<article class="catalog-item">
