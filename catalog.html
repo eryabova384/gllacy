@@ -16,7 +16,7 @@
 	  			</div>
 	  			<ul class="main-menu">
 	  				<li class="link-catalog">
-	  					<a class="main-menu-link" href="#"><span>Каталог</span></a>
+	  					<a class="main-menu-link link-on-page" href="#">Каталог</a>
 		  				<ul class="sub-menu">
 				  			<li><a href="#" class="link-new">Новинки</a></li>
 				  			<li><a>Сливочное</a></li>
@@ -40,6 +40,7 @@
 					  	</div>
 					  	<div class="search-wrapper">
 					  		<input class="form-input search-input" type="text" name="search" id="search" placeholder="Что ищем?">
+					  		<label for="search">Что ищем?</label>
 					  	</div>
 		  			</section>
 		  			<section class="authorize">
@@ -49,10 +50,10 @@
 					  	</div>
 					  	<div class="authorize-wrapper">
 						  	<form method="post">
-						  		<label for="login" class="visually-hidden">Электронная почта</label>
 						  		<input class="form-input" type="email" name="login" id="login" placeholder="Электронная почта" required>
-						  		<label for="password" class="visually-hidden">Пароль</label>
+						  		<label for="login" class="label-login">Электронная почта</label>
 								<input class="form-input" type="password" name="password" id="password" placeholder="Пароль" required>
+								<label for="password" class="label-passwd">Пароль</label>
 								<button type="submit" class="button authorize-button">Войти</button>
 							</form>
 							<div class="authorize-links">
@@ -127,30 +128,32 @@
 		  			<div class="filter-wrap">
 		  				<div class="filter-sort">
 		  					<form method="post">
-						  		<label for="sort">Сортировка:</label>
-							  	<select name="sort" id="sort">
+						  		<label class="label-sort" for="sort">Сортировка:</label>
+							  	<select name="sort" id="sort" class="sort-products">
 							  		<option>по&nbsp;популярности</option>
 							  		<option>сначала недорогие</option>
 							  		<option>сначала дорогие</option>
 							  		<option>по&nbsp;жирности</option>
 							  	</select>
 							 </form>
+							 <div class="sort-icon">
+							 	<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg version="1.1" id="Layer_1" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xmlns="http://www.w3.org/2000/svg"><polyline points="5.5,10 0,0 11,0 "></polyline></svg>
+							 </div>
 						</div>
 						<div class="filter-price">
 					  		<div class="price-constraints">
 					  			<form method="post">
 					  				<span>Цена:</span>
-							  		<input type="text" name="price-min" id="price-min" value="100">
-							  		<label class="price-min" for="price-min">руб.</label>
-							  		<input type="text" name="price-max" id="price-max" value="500">
-							  		<label for="price-max">руб.</label>
+							  		<input class="fiter-text" type="text" name="price-min" id="price-min" value="100">
+							  		<label class="price-label" for="price-min">руб. –</label>
+							  		<input class="fiter-text" type="text" name="price-max" id="price-max" value="500">
+							  		<label class="price-label" for="price-max">руб.</label>
 							  	</form>
 						  	</div>
 						  	<div class="price-range-wrapper">
 						  		<div class="price-range">
 						  			<div class="price-scale">
-						  				<div class="price-bar">
-						  				</div>
+						  				<div class="price-bar"></div>
 						  			</div>
 						  			<div class="range-toggle range-toggle-min"></div>
 									<div class="range-toggle range-toggle-max"></div>
@@ -159,16 +162,16 @@
 						</div>
 					<div class="filter-fat">
 						<form method="post">
+							<label class="fat-label">Жирность:</label>
 					  		<fieldset class="fat">
-					  			<legend>Жирность:</legend>
-					  			<input type="radio" name="fat-amount" id="fat-amount-0" value="0-percent">
-					  			<label for="fat-amount-0">0%</label>
-					  			<input type="radio" name="fat-amount" id="fat-amount-less-10" value="less-10-percent" checked>
-					  			<label for="fat-amount-less-10">до&nbsp;10%</label>
-					  			<input type="radio" id="fat-amount-less-30" name="fat-amount" value="less-30-percent">
-					  			<label for="fat-amount-less-30">до&nbsp;30%</label>
-					  			<input type="radio" name="fat-amount" id="fat-amount-more-30" value="more-30-percent">
-					  			<label for="fat-amount-more-30">выше&nbsp;30%</label>
+					  			<input type="radio" class="fat-radio" name="fat-amount" id="fat-amount-0" value="0-percent">
+					  			<label class="fat-amount" for="fat-amount-0">0%</label>
+					  			<input type="radio" class="fat-radio" name="fat-amount" id="fat-amount-less-10" value="less-10-percent" checked>
+					  			<label class="fat-amount" for="fat-amount-less-10">до&nbsp;10%</label>
+					  			<input type="radio" class="fat-radio" id="fat-amount-less-30" name="fat-amount" value="less-30-percent">
+					  			<label class="fat-amount" for="fat-amount-less-30">до&nbsp;30%</label>
+					  			<input type="radio" class="fat-radio" name="fat-amount" id="fat-amount-more-30" value="more-30-percent">
+					  			<label class="fat-amount" for="fat-amount-more-30">выше&nbsp;30%</label>
 					  		</fieldset>
 					  	</form>
 				  	</div>
@@ -178,15 +181,15 @@
 						<form method="post">
 							<fieldset class="fillers">
 					  			<legend>Наполнители:</legend>
-					  			<input type="checkbox" id="choko" name="choko" checked>
+					  			<input type="checkbox" class="fillers-checkbox" id="choko" name="choko" checked>
 					  			<label for="choko">шоколадные</label>
-					  			<input type="checkbox" id="sugar" name="sugar" checked>
+					  			<input type="checkbox" class="fillers-checkbox" id="sugar" name="sugar" checked>
 					  			<label for="sugar">сахарные присыпки</label>
-					  			<input type="checkbox" id="fruits" name="fruits">
+					  			<input type="checkbox" class="fillers-checkbox" id="fruits" name="fruits">
 					  			<label for="fruits">фрукты</label>
-					  			<input type="checkbox" id="syrup" name="syrup">
+					  			<input type="checkbox" class="fillers-checkbox" id="syrup" name="syrup">
 					  			<label for="syrup">сиропы</label>
-					  			<input type="checkbox" id="jam" name="jam">
+					  			<input type="checkbox" class="fillers-checkbox" id="jam" name="jam">
 					  			<label for="jam">джемы</label>
 					  		</fieldset>
 					  	</form>
