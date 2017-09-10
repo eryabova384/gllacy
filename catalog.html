@@ -125,11 +125,11 @@
   				<li class="breadcrumb-item breadcrumbs-current">Сливочное</li>
   			</ul>
 		  	<h1 class="catalog-title">Сливочное мороженое</h1>
-		  	<div class="filter-horizontal">
+		  	<form class="filter-horizontal">
 		  		<h2 class="visually-hidden">Фильтр товаров</h2>
 		  		<div class="filter-wrap">
 		  			<div class="filter-sort">
-		  				<form method="post">
+		  				<div>
 						  	<label class="label-sort" for="sort">Сортировка:</label>
 							<select name="sort" id="sort" class="sort-products">
 							 		<option>по&nbsp;популярности</option>
@@ -137,20 +137,20 @@
 							  		<option>сначала дорогие</option>
 							  		<option>по&nbsp;жирности</option>
 							  	</select>
-						</form>
+						</div>
 						<div class="sort-icon">
 							 <svg version="1.1" id="Layer_1" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xmlns="http://www.w3.org/2000/svg"><polyline points="5.5,10 0,0 11,0 "></polyline></svg>
 						</div>
 					</div>
 					<div class="filter-price">
 					  	<div class="price-constraints">
-					  		<form method="post">
+					  		<div>
 					  			<span>Цена:</span>
 							  	<input class="fiter-text" type="text" name="price-min" id="price-min" value="100">
 							  	<label class="price-label" for="price-min">руб. –</label>
 							  	<input class="fiter-text" type="text" name="price-max" id="price-max" value="500">
 							  	<label class="price-label" for="price-max">руб.</label>
-							</form>
+							</div>
 						</div>
 						<div class="price-range-wrapper">
 						  	<div class="price-range">
@@ -162,7 +162,7 @@
 						  	</div>
 						</div>
 					</div>
-					<form method="post">
+					<div>
 						<fieldset class="fat">
 							<legend class="fat-label">Жирность:</legend>
 							<div class="filter-fat">
@@ -184,10 +184,9 @@
 								</div>
 							</div>
 						</fieldset>
-					</form>
+					</div>
 				</div>
 				<div class="filter-wrap">
-					<form method="post">
 						<fieldset class="fillers">
 							<legend class="fillers-legend">Наполнители:</legend>
 							<div class="filter-fillers">
@@ -213,14 +212,11 @@
 							  	</div>
 						  	</div>
 					  </fieldset>
-					</form>
 				  	<div class="filter-apply">
-				  		<form method="post">
-				  			<button type="submit" class="apply-button">Применить</button>
-				  		</form>
+				  		<button type="submit" class="apply-button">Применить</button>
 				  	</div>
 				</div>
-			</div>
+			</form>
 			  	<section class="catalog-list">
 			  			<h2 class="visually-hidden">Каталог товаров</h2>
 			  			<article class="catalog-item">

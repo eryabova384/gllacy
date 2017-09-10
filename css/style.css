@@ -235,7 +235,7 @@ body {
 	color: #999999;
 	opacity: 0;
 	position: absolute;
-	top: 73px;
+	top: 68px;
 	left: 23px;
 }
 .label-email-subscrb {
@@ -579,7 +579,6 @@ body {
 	color: #323232;
 	background-color: #ffffff;
 	border-radius: 50%;
-	margin-left: 10px;
 }
 .catalog-pagination a:hover {
 	background-color: rgba(255, 255, 255, 0.2);
@@ -647,6 +646,12 @@ body {
 	line-height: 24px;
 }
 :input:-moz-placeholder {
+	color: #999999;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 24px;
+}
+.form-input:-ms-input-placeholder {
 	color: #999999;
 	font-size: 16px;
 	font-weight: normal;
@@ -909,7 +914,6 @@ body {
 }
 .apply-button {
 	margin: 0;
-	margin-left: 11px;
 	padding: 8px 29px;
 	color: #ffffff;
 	font-size: 16px;
@@ -1103,6 +1107,9 @@ body {
 	top: 350px;
 	left: 720px;
 	z-index: 55;
+}
+.modal-show {
+	display: block;
 }
 .feedback-form {
 	display: none;
@@ -1464,7 +1471,7 @@ body {
 	display: flex;
 	width: 100%;
 	align-items: flex-start;
-	margin-bottom: 16px;
+	margin-bottom: 10px;
 }
 .filter-sort {
 	display: flex;
@@ -1546,20 +1553,17 @@ body {
 	flex-wrap: wrap;
 	background: rgba(255, 255, 255, 0.3);
 	border-radius: 30px;
-	padding: 8px 25px;
+	padding: 8px 14px;
 }
 .filter-fillers-item {
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
-	padding-right: 44px;
-	padding-left: 5px;
-}
-.filter-fillers-item:first-child {
-	padding-left: 30px;
+	margin-right: 20px;
+	padding-left: 33px;
 }
 .filter-fillers-item:last-child {
-	padding-right: 5px;
+	margin-right: 6px;
 }
 .fillers-label {
 	position: relative;
@@ -1568,15 +1572,14 @@ body {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	width: 170px;
+	margin-left: 15px;
 }
 .catalog-pagination {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	max-width: 100%;
 	align-items: flex-end;
-	margin-top: 44px;
+	margin-top: 50px;
 	margin-bottom: 50px;
 }
 .pagination-items {
@@ -1589,10 +1592,11 @@ body {
 	border: none;
 	background: url("../img/icon-right-small.svg");
 	background-repeat: no-repeat;
-	background-position: center; 
+	background-position: center;
 }
 .pagination-items button:first-child {
 	transform: rotate(180deg);
+	margin-right: 10px;
 }
 .main-slider {
 	position: relative;
