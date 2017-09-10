@@ -137,26 +137,27 @@ body {
 	background-color: #f6b5a5;
 }
 .search {
+	position: relative;
+	padding-bottom: 15px;
+}
+.link-search {
 	display: block;
+	font-size: 0;
+	border-radius: 15px;
+	background-color: rgba(255, 255, 255, 0.2);
 	width: 30px;
 	height: 30px;
-	background-color: rgba(255, 255, 255, 0.2);
-	border-radius: 15px;
-	position: relative;
+	overflow-y: hidden;
 }
-.search .link-search {
-	font-size: 0;
-}
-.search .icon-search {
+.icon-search {
   	position: absolute;
   	top: 6px;
   	left: 6px;
   	width: 17px;
   	height: 17px;
   	fill: #ffffff;
-  	padding-bottom: 30px;
 }
-.search:hover {
+.link-search:hover {
 	background-color: #ffffff;
 }
 .search:hover .icon-search {
@@ -271,25 +272,27 @@ body {
 	display: block;
 	width: 110px;
 	height: 25px;
-	background-color: rgba(255, 255, 255, 0.2);
-	border-radius: 20px;
 	text-align: center;
 	position: relative;
-	padding: 3px 3px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
+	padding: 5px 3px;
 }
 .basket .basket-empty {
-	padding-left: 15px;
+	display: inline-block;
+	padding-left: 13px;
+	padding-top: 5px;
 	font-size: 14px;
 	line-height: 16px;
+	padding-bottom: 15px;
 }
 .basket .icon-basket {
 	width: 20px;
 	height: 20px;
 	position: absolute;
-	top: 5px;
-	right: 83px;
+	top: 7px;
+	right: 80px;
 	fill: #ffffff;
-	padding-bottom: 35px;
 }
 .authorize .authorize-link-entrance {
 	font-size: 14px;
@@ -305,9 +308,6 @@ body {
 	text-align: center;
 	padding-top: 10px;
 	padding-left: 23px;
-}
-.authorize-link-entrance span {
-	padding-bottom: 30px;
 }
 .authorize .authorize-link {
 	font-size: 13px;
@@ -617,7 +617,9 @@ body {
 	text-decoration: none;
 	font-size: 14px;
 	line-height: 16px;
-	padding-left: 20px;
+	padding-left: 22px;
+	padding-bottom: 3px;
+	padding-bottom: 20px;
 }
 .with-products {
 	background-color: #f7f6f3;
@@ -655,12 +657,10 @@ body {
 	margin: 0;
 	margin-top: 20px;
 	width: 310px;
-	min-height: 44px;
 	padding: 15px 20px;
 }
 .subscribe-form {
 	width: 368px;
-	min-height: 45px;
 	margin-top: 35px;
 	margin-bottom: 30px;
 	padding: 10px 10px;
@@ -686,12 +686,22 @@ body {
  {
  	border: 2px solid #c7c6c5;
  	outline: none;
+ 	padding: 14px 15px;
 }
 .form-input:focus,
 .feedback-text:focus
  {
 	border: 2px solid #8fbdec;
 	outline: none;
+	padding: 14px 15px;
+}
+.search-input:hover,
+.search-input:focus {
+	padding: 14px 20px;
+}
+.subscribe-form:hover,
+.subscribe-form:focus {
+	padding: 9px 10px;
 }
 .labels {
 	position: relative;
@@ -1069,6 +1079,7 @@ body {
 .authorize {
 	box-sizing: border-box;
 	position: relative;
+	padding-bottom: 15px;
 }
 .modal {
 	display: none; 
@@ -1099,12 +1110,11 @@ body {
 .products-wrapper {
 	display: none;
 	width: 540px;
-	min-height: 242px;
 	background-color: #f8f7f4;
 	position: absolute;
 	width: 540px;
 	right: 0;
-	top: 35px;
+	top: 40px;
 	border-radius: 5px;
 	z-index: 20;
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -1178,13 +1188,14 @@ body {
 }
 .user-menu {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	margin: 0;
 	padding: 0;
-	padding-top: 7px;
+	padding-top: 25px;
 }
 .user-menu .search {
 	margin-right: 10px;
+	margin-top: 3px;
 }
 .user-menu .basket {
 	margin-left: 10px;
