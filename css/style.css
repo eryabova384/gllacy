@@ -1296,7 +1296,7 @@ body {
 	align-content: flex-end;
 	width: 50%;
 	position: relative;
-	padding-left: 75px;
+	padding-left: 73px;
 	padding-right: 22px;
 	padding-bottom: 20px;
 }
@@ -1321,8 +1321,8 @@ body {
 .list-item:last-child:before {
 	content: url("../img/thermometer.svg");
 	position: absolute;
-	left: 14px;
-	top: -16px;
+	left: 12px;
+	top: -14px;
 }
 .footer-navigation {
 	width: 390px;
