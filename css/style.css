@@ -235,7 +235,7 @@ body {
 	color: #999999;
 	opacity: 0;
 	position: absolute;
-	top: 82px;
+	top: 73px;
 	left: 23px;
 }
 .label-email-subscrb {
@@ -352,7 +352,7 @@ body {
 .authorize-links {
 	position: absolute;
 	width: 130px;
-	top: 160px;
+	top: 145px;
 	left: 140px;
 }
 .header-contacts a {
@@ -640,34 +640,46 @@ body {
 	margin-left: 20px;
 }
 /* Инпуты, чекбоксы, радио */
+::-webkit-input-placeholder {
+	color: #999999;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 24px;
+}
+:input:-moz-placeholder {
+	color: #999999;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 24px;
+}
 .form-input
  {
+ 	margin: 0;
+ 	padding: 0;
 	border: 1px solid #d3d3d2;
 	width: 240px;
-	min-height: 40px;
 	box-sizing: border-box;
 	border-radius: 5px;
 	margin-bottom: 20px;
-	padding: 15px 15px;
+	padding: 10px 14px;
+	font-weight: bold;
+	color: #323232;
 	font-size: 16px;
 	line-height: 24px;
-	font-weight: bold;
 }
 .search-input {
 	margin: 0;
 	margin-top: 20px;
 	width: 310px;
-	padding: 15px 20px;
 }
 .subscribe-form {
+	margin: 0;
 	width: 368px;
 	margin-top: 35px;
 	margin-bottom: 30px;
-	padding: 10px 10px;
 }
 .feedback {
 	width: 267px;
-	min-height: 44px;
 	font-size: 16px;
 	line-height: 24px;
 	color: #999999;
@@ -686,22 +698,16 @@ body {
  {
  	border: 2px solid #c7c6c5;
  	outline: none;
- 	padding: 14px 15px;
+ 	padding-top: 9px;
+ 	padding-bottom: 9px;
 }
 .form-input:focus,
 .feedback-text:focus
  {
 	border: 2px solid #8fbdec;
 	outline: none;
-	padding: 14px 15px;
-}
-.search-input:hover,
-.search-input:focus {
-	padding: 14px 20px;
-}
-.subscribe-form:hover,
-.subscribe-form:focus {
-	padding: 9px 10px;
+	padding-top: 9px;
+ 	padding-bottom: 9px;
 }
 .labels {
 	position: relative;
@@ -717,9 +723,13 @@ body {
 	line-height: 18px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 18px;
+	-ms-appearance: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+}
+.sort-products::-ms-expand {
+    display: none;
 }
 .filter-sort .sort-icon {
 	width: 11px;
@@ -964,7 +974,7 @@ body {
   	width: 143px;
   	margin: 0;
   	padding: 0;
-	min-height: 170px;
+	min-height: 165px;
 	background-color: #f8f7f4;
 	border-radius: 5px;
 	box-sizing: border-box;
@@ -1055,7 +1065,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
-	margin-top: 40px;
+	margin-top: 41px;
 	width: 100%;
 }
 .adress-map iframe {
@@ -1282,7 +1292,7 @@ body {
 	height: 36px;
 }
 .blog-and-subscribe {
-	margin-top: 35px;
+	margin-top: 40px;
 	display: flex;
 	align-items: flex-start;
 }
@@ -1318,24 +1328,32 @@ body {
 	position: absolute;
 	left: 19px;
 	top: -14px;
+	width: 49px;
+	height: 49px;
 }
 .list-item:nth-child(2):before {
 	content: url("../img/cow.svg");
 	position: absolute;
 	left: 14px;
 	top: -14px;
+	width: 49px;
+	height: 49px;
 }
 .list-item:nth-child(3):before {
 	content: url("../img/eco.svg");
 	position: absolute;
 	left: 19px;
 	top: -14px;
+	width: 49px;
+	height: 49px;
 }
 .list-item:last-child:before {
 	content: url("../img/thermometer.svg");
 	position: absolute;
 	left: 12px;
 	top: -14px;
+	width: 49px;
+	height: 49px;
 }
 .footer-navigation {
 	width: 390px;
