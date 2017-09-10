@@ -303,8 +303,8 @@ body {
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 20px;
 	text-align: center;
-	padding-top: 7px;
-	padding-left: 21px;
+	padding-top: 10px;
+	padding-left: 23px;
 }
 .authorize-link-entrance span {
 	padding-bottom: 30px;
@@ -617,7 +617,7 @@ body {
 	text-decoration: none;
 	font-size: 14px;
 	line-height: 16px;
-	padding-left: 15px;
+	padding-left: 20px;
 }
 .with-products {
 	background-color: #f7f6f3;
@@ -1179,6 +1179,7 @@ body {
 	align-items: center;
 	margin: 0;
 	padding: 0;
+	padding-top: 7px;
 }
 .user-menu .search {
 	margin-right: 10px;
@@ -1297,7 +1298,7 @@ body {
 	position: relative;
 	padding-left: 75px;
 	padding-right: 22px;
-	padding-bottom: 25px;
+	padding-bottom: 20px;
 }
 .list-item:first-child:before {
 	content: url("../img/ice-cream.svg");
