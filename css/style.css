@@ -314,8 +314,8 @@ body {
     height: 19px;
     position: absolute;
     fill: #ffffff;
-    top: 7px;
-    left: 15px;
+    top: 4px;
+    left: 16px;
 }
 .authorize:hover .icon-authorize {
     fill: #323232;
