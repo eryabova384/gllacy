@@ -715,7 +715,7 @@ body {
 	width: 11px;
 	height: 10px;
 	position: absolute;
-	top: 33px;
+	top: 37px;
 	right: 32px;
 	fill: #ffffff;
 }
@@ -1050,6 +1050,8 @@ body {
 }
 .adress-map iframe {
 	border: none;
+	width: 100%;
+	height: 430px;
 }
 .contacts-wrapper {
 	position: relative;
