@@ -1009,7 +1009,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 12px;
-    margin-top: 8px;
+    margin-top: 4px;
 }
 .blog-article {
     width: 560px;
@@ -1054,7 +1054,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    margin-top: 39px;
+    margin-top: 40px;
     width: 100%;
 }
 .adress-map iframe {
@@ -1284,7 +1284,7 @@ body {
     height: 36px;
 }
 .blog-and-subscribe {
-    margin-top: 41px;
+    margin-top: 40px;
     display: flex;
     align-items: flex-start;
 }
