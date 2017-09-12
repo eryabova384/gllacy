@@ -144,7 +144,7 @@ body {
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.2);
     width: 30px;
-    height: 30px;
+    height: 28px;
     padding-top: 2px;
 }
 .icon-search {
@@ -460,6 +460,9 @@ body {
     padding: 0;
     margin: 0;
 }
+.text-grey {
+    color: #5a5a5a;
+}
 .text-small {
     display: inline-block;
     font-size: 14px;
@@ -606,7 +609,6 @@ body {
     font-size: 14px;
     line-height: 16px;
     padding-left: 22px;
-    padding-bottom: 3px;
     padding-bottom: 20px;
 }
 .with-products {
@@ -1044,9 +1046,6 @@ body {
     padding-right: 20px;
     box-sizing: border-box;
     position: relative;
-}
-.substate > .ordinary-text {
-    color: #5a5a5a;
 }
 .adress-map {
     height: 430px;
@@ -1583,8 +1582,10 @@ body {
     margin-left: 7px;
 }
 .pagination-items button:first-child {
-    transform: rotate(180deg);
     margin-right: 10px;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); 
 }
 .main-slider {
     position: relative;
