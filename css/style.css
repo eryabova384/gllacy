@@ -1009,7 +1009,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 12px;
-    margin-top: 4px;
+    margin-top: 6px;
 }
 .blog-article {
     width: 560px;
@@ -1023,6 +1023,7 @@ body {
 }
 .filter-horizontal {
     margin-top: 20px;
+    margin-bottom: -4px;
 }
 .subscribe {
     width: 560px;
@@ -1179,6 +1180,7 @@ body {
 .page-navigation {
     display: flex;
     width: 80%;
+    margin-top: -2px;
 }
 .main-menu {
     display: flex;
@@ -1210,14 +1212,14 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 38px;
 }
 .catalog-list {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    margin-top: 35px;
+    margin-top: 37px;
     width: 100%;
     justify-content: space-between;
 }
