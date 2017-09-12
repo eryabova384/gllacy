@@ -283,8 +283,8 @@ body {
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 7px;
-    right: 80px;
+    top: 6px;
+    right: 81px;
     fill: #ffffff;
 }
 .authorize .authorize-link-entrance {
@@ -384,7 +384,7 @@ body {
     font-weight: bold;
     line-height: 41px;
     color: #ffffff;
-    padding-top: 8px;
+    padding-top: 5px;
 }
 .offers-title {
     margin-top: 10px;
@@ -450,7 +450,7 @@ body {
 }
 .article-title:hover,
 .article-title:active {
-    color: #ffbc9e;
+    color: #e84d37;
 }
 .ordinary-text {
     font-size: 16px;
@@ -490,7 +490,7 @@ body {
     margin-left: 24px;
     margin-right: 50px;
     vertical-align: top;
-    margin-top: 5px;
+    margin-top: 4px;
 }
 .big-text-link:hover,
 .big-text-link:active  {
@@ -866,8 +866,8 @@ body {
     font-size: 18px;
     line-height: 24px;
     padding: 10px 10px;
-    margin-top: 35px;
-    margin-left: 5px;
+    margin-top: 36px;
+    margin-left: 8px;
 }
 .send-button {
     font-size: 18px;
@@ -879,11 +879,11 @@ body {
 .contacts .send-button {
     font-size: 18px;
     line-height: 24px;
-    margin-top: 23px;
+    margin-top: 24px;
     margin-left: 24px;
     margin-right: 24px;
     margin-bottom: 27px;
-    padding-top: 9px;
+    padding-top: 10px;
     padding-left: 24px;
 }
 .quick-view {
@@ -983,9 +983,6 @@ body {
     top: 35px;
     right: 0px;
 }
-.offers {
-    margin-top: 50px;
-}
 .offers-item {
     width: 560px;
     min-height: 230px;
@@ -1009,7 +1006,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 12px;
-    margin-top: 5px;
+    margin-top: 8px;
 }
 .blog-article {
     width: 560px;
@@ -1054,7 +1051,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    margin-top: 41px;
+    margin-top: 39px;
     width: 100%;
 }
 .adress-map iframe {
@@ -1068,7 +1065,7 @@ body {
 .contacts {
     position: absolute;
     width: 300px;
-    top: -377px;
+    top: -374px;
     right: 27px;
     min-height: 305px;
     background-color: #ffffff;
@@ -1210,6 +1207,7 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    margin-top: 47px;
 }
 .catalog-list {
     display: flex;
@@ -1270,8 +1268,8 @@ body {
 .popular:before {
     content: url("../img/hit.svg");
     position: absolute;
-    top: 7px;
-    left: 0;
+    top: 4px;
+    left: 1px;
     z-index: 30;
 }
 .icon-rouble {
@@ -1283,7 +1281,7 @@ body {
     height: 36px;
 }
 .blog-and-subscribe {
-    margin-top: 40px;
+    margin-top: 41px;
     display: flex;
     align-items: flex-start;
 }
@@ -1312,7 +1310,7 @@ body {
     position: relative;
     padding-left: 73px;
     padding-right: 22px;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
 }
 .list-item:first-child:before {
     content: url("../img/ice-cream.svg");
@@ -1326,15 +1324,15 @@ body {
     content: url("../img/cow.svg");
     position: absolute;
     left: 14px;
-    top: -14px;
+    top: -13px;
     width: 49px;
     height: 49px;
 }
 .list-item:nth-child(3):before {
     content: url("../img/eco.svg");
     position: absolute;
-    left: 19px;
-    top: -14px;
+    left: 20px;
+    top: -13px;
     width: 49px;
     height: 49px;
 }
@@ -1342,7 +1340,7 @@ body {
     content: url("../img/thermometer.svg");
     position: absolute;
     left: 12px;
-    top: -14px;
+    top: -13px;
     width: 49px;
     height: 49px;
 }
@@ -1403,9 +1401,7 @@ body {
 }
 .footer-social .social-icon:active {
     opacity: 1;
-    fill: #e9e9e9; 
     border: 4px solid rgba(255,255,255, 0.7);
-    box-shadow: inset 0px 2px 1px #888888;
 }
 .footer-catalog {
     position: relative;
@@ -1423,7 +1419,7 @@ body {
 .breadcrumbs {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -22px;
+    margin-top: -19px;
 }
 .breadcrumb-item,
 .breadcrumb-item a {
@@ -1591,7 +1587,7 @@ body {
     position: relative;
     text-align: center;
 }
-body input[type="radio"] {
+.slider-radio {
     display: none;
 }
 .slide {
@@ -1604,7 +1600,7 @@ body input[type="radio"] {
     line-height: 60px;
     margin: 0 auto;
     margin-bottom: 45px;
-    margin-top: 270px;
+    margin-top: 275px;
 }
 .slider-pagination {
     position: absolute;
