@@ -1006,11 +1006,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 12px;
-    margin-top: 8px;
+    margin-top: 5px;
 }
 .blog-article {
     width: 560px;
-    min-height: 220px;
     background-image: url("../img/strawberries.jpg");
     background-color: #ffffff;
     background-repeat: no-repeat;
@@ -1281,7 +1280,7 @@ body {
     height: 36px;
 }
 .blog-and-subscribe {
-    margin-top: 41px;
+    margin-top: 40px;
     display: flex;
     align-items: flex-start;
 }
