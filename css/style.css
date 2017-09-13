@@ -141,16 +141,15 @@ body {
 .link-search {
     display: block;
     font-size: 0;
-    border-radius: 15px;
+    border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.2);
-    width: 30px;
-    height: 28px;
-    padding-top: 2px;
+    width: 32px;
+    height: 32px;
 }
 .icon-search {
     position: absolute;
-    top: 6px;
-    left: 6px;
+    top: 7px;
+    left: 8px;
     width: 17px;
     height: 17px;
     fill: #ffffff;
